@@ -1,0 +1,43 @@
+TebLocalPlannerROS:
+  # Trajectory
+  teb_autosize: True
+  dt_ref: 0.3
+  dt_hysteresis: 0.1
+  min_samples: 3
+  global_plan_overwrite_orientation: True
+  allow_init_with_backwards_motion: False
+  max_global_plan_lookahead_dist: 3.0
+  global_plan_prune_distance: 1.0
+
+  # Robot
+  max_vel_x: 2
+  max_vel_x_backwards: 1
+  max_vel_y: 2         # Allow for sideways movement
+  acc_lim_x: 0.5
+  acc_lim_y: 0.5         # Acceleration limits for y direction
+  max_vel_theta: 5.0
+  acc_lim_theta: 5.0
+
+  # Footprint model
+  footprint_model:
+    type: "circular"
+    radius: 0.2
+
+  # Goal tolerance
+  xy_goal_tolerance: 0.4
+  yaw_goal_tolerance: 0.6
+  free_goal_vel: False
+
+  # Obstacles
+  min_obstacle_dist: 0.1
+  inflation_dist: 0.1
+  dynamic_obstacle_inflation_dist: 0.1
+
+  # Optimization
+  weight_optimaltime: 1.0
+  weight_max_vel_x: 2.0
+  weight_max_vel_y: 2.0    # Weight for y velocity
+  weight_max_vel_theta: 1.0
+  weight_acc_lim_x: 1.0
+  weight_acc_lim_y: 1.0    # Weight for y acceleration
+  weight_acc_lim_theta: 1.0
