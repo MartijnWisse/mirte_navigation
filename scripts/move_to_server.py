@@ -20,6 +20,7 @@ class MoveToLocation:
         self.move_base_client = actionlib.SimpleActionClient('move_base', MoveBaseAction)
         self.move_base_client.wait_for_server()
         self.service = rospy.Service('move_to', MoveTo, self.handle_move_to)
+        rospy.loginfo("rosservice '/move_to' now available")
 
     def load_locations(self, map_file_name):
         locations_file_path = os.path.join(self.locations_dir, f'{map_file_name}.yaml')
