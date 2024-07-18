@@ -66,6 +66,7 @@ find_package(catkin REQUIRED COMPONENTS
 add_service_files(
   FILES
   GetStoredPose.srv
+  StorePose.srv
   MoveTo.srv
 )
 

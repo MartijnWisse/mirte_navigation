@@ -1,9 +1,9 @@
 DWAPlannerROS:
   # Robot Configuration Parameters
-  max_vel_x: 0.2
-  min_vel_x: 0.1
-  max_vel_y: 0.2         # Allow for sideways movement if your robot is holonomic
-  min_vel_y: -0.2        # Allow for sideways movement if your robot is holonomic
+  max_vel_x: 0.6
+  min_vel_x: 0.2
+  max_vel_y: 0.3         # Allow for sideways movement if your robot is holonomic
+  min_vel_y: -0.3        # Allow for sideways movement if your robot is holonomic
   max_vel_theta: 1
   min_vel_theta: 0.5
   acc_lim_x: 1000
@@ -16,8 +16,8 @@ DWAPlannerROS:
   min_in_place_vel_theta: 0.5
 
   # 
-  min_vel_trans: 0.1
-  max_vel_trans: 0.2
+  min_vel_trans: 0.2
+  max_vel_trans: 0.4
 
   # Goal Tolerance Parameters
   xy_goal_tolerance: 0.2

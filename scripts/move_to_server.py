@@ -18,6 +18,7 @@ class MoveToLocation:
         self.locations_dir = os.path.join(self.package_path, "maps")
         self.status_pub = rospy.Publisher('/robot_status', String, queue_size=10)
         self.move_base_client = actionlib.SimpleActionClient('move_base', MoveBaseAction)
+        rospy.loginfo("Waiting for move_base to come online")
         self.move_base_client.wait_for_server()
         self.service = rospy.Service('move_to', MoveTo, self.handle_move_to)
         rospy.loginfo("rosservice '/move_to' now available")
