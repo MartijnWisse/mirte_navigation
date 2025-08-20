@@ -19,7 +19,7 @@ amcl:
 map_server:
   ros__parameters:
     use_sim_time: false
-    yaml_filename: "/home/mirte/mirte_ws/src/mirte_navigation/maps/office.yaml"
+    yaml_filename: "/home/mirte/mirte_ws/src/mirte_navigation/maps/default.yaml"
 
 planner_server:
   ros__parameters:
