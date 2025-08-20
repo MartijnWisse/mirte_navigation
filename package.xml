@@ -4,7 +4,7 @@
   <name>mirte_navigation</name>
   <version>0.0.0</version>
   <description>Nav2 configuration for Mirte master</description>
-  <maintainer email=""></maintainer>
+  <maintainer email="m.wisse@tudelft.nl">martijn</maintainer>
   <license>Apache-2.0</license>
 
   <depend>navigation2</depend>
